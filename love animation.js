@@ -408,3 +408,11 @@ const toggleSound = () => {
   };
 };
 el.sound.addEventListener("click", toggleSound());
+
+/*Audio de Fundo */
+window.onload = function() {
+        var audioFundo = document.querySelector('.fundo');
+        audioFundo.play().catch(function(error) {
+            console.log('Erro ao tentar reproduzir o áudio:', error);
+        });
+    };
